@@ -92,6 +92,18 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "nose2"
+version = "0.13.0"
+description = "unittest with plugins"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+coverage-plugin = ["coverage"]
+dev = ["Sphinx", "sphinx-issues", "sphinx-rtd-theme"]
+
+[[package]]
 name = "outcome"
 version = "1.2.0"
 description = "Capture the outcome of Python function calls."
@@ -317,7 +329,7 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "9a531fdfb2040aa8249f18839c44b56e938e0037a1781e37193ad65c0e65c7b4"
+content-hash = "6c7a3df5fb9caff8628a80681232d3e36007bd589274ebeb5c8c21225fffd47c"
 
 [metadata.files]
 async-generator = [
@@ -494,6 +506,10 @@ idna = [
 iniconfig = [
     {file = "iniconfig-2.0.0-py3-none-any.whl", hash = "sha256:b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374"},
     {file = "iniconfig-2.0.0.tar.gz", hash = "sha256:2d91e135bf72d31a410b17c16da610a82cb55f6b0477d1a902134b24a455b8b3"},
+]
+nose2 = [
+    {file = "nose2-0.13.0-py3-none-any.whl", hash = "sha256:e29017c9309fe2c8b8a1f1db7a0e7526acaba0c3990f32a0d961e6a7bc5cc190"},
+    {file = "nose2-0.13.0.tar.gz", hash = "sha256:57c68ad676ef4b88b50694937eb52f4943aa1ca261074b4909b6e163046b46f0"},
 ]
 outcome = [
     {file = "outcome-1.2.0-py2.py3-none-any.whl", hash = "sha256:c4ab89a56575d6d38a05aa16daeaa333109c1f96167aba8901ab18b6b5e0f7f5"},

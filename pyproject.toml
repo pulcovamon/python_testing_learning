@@ -10,6 +10,7 @@ python = "^3.10"
 pytest = "^7.3.1"
 selenium = "^4.9.1"
 webdriver-manager = "^3.8.6"
+nose2 = "^0.13.0"
 
 
 [build-system]

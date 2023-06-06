@@ -1,0 +1,36 @@
+I am using this tutorial:
+https://realpython.com/python-testing/
+
+Manual testing
+    - exploratory testing
+Automated testing
+    - Integration test -> more components
+        - testing, if components work well witch eaach other
+        - cannot find, where is the error
+    - Unit test -> single component
+        - testing, if the component works well
+        - can find the place, which doesn't work well
+
+terminology
+    - test step: trying to perform some action
+    - test assertion: evaluating, if it works well
+    - test case: one of the tests
+
+test runners
+    - unittest: builtin library
+        - requires using classes and methods
+    - nose or nose2
+        - compatible with unittest tests
+        - running from command line
+            - to all files called test*.py
+            - tests cases inheriting from unittest
+            - command: python -m nose2
+    - pytest
+        - supports execution of unittest cases
+        - executing all tests in python file
+            - all functions starting with test_
+        - great features
+            - using builtin assert instead of self.assert*()
+            - supports filtering for test cases
+            - ability to rerun from the last failing test
+            - huge ecosystem (hundreds of plagins)
