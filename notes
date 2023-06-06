@@ -34,3 +34,7 @@ test runners
             - supports filtering for test cases
             - ability to rerun from the last failing test
             - huge ecosystem (hundreds of plagins)
+
+some useful info
+    - create __init__.py in the project directory -> package (it can be imported)
+    - __import__() -> target doesn't have to be package
