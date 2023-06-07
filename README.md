@@ -1,7 +1,7 @@
 # Automation testing wiht python - learning
 I decided to learn basics of **automation testing**. I am using various tutorials.
 
-File structure
+**File structure:**
 ```
 - **Program**: files with simple functions (I am then testing these functions)
 - **Tests**
