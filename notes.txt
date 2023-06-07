@@ -15,10 +15,15 @@ terminology
     - test step: trying to perform some action
     - test assertion: evaluating, if it works well
     - test case: one of the tests
+    - side effect: altering atribute, class, file, database, etc.
+    - fixture: data created as an inputs
+    - parametrization: running same test with various inputs
 
 test runners
     - unittest: builtin library
         - requires using classes and methods
+        - can run using command python -m unittest test (file is test.py)
+        - or using command line entry point: unittest.main() v kódu
     - nose or nose2
         - compatible with unittest tests
         - running from command line
