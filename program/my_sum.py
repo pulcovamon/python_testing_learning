@@ -9,7 +9,7 @@ def sum_of_mine(numbers:list|tuple)->int|float:
     """add any number of numbers
 
     Args:
-        numbers (list|tuple of int|floats): numbers
+        numbers (list|tuple[int|float]): numbers
 
     Returns:
         int|float: sum of the given numbers

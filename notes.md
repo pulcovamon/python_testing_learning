@@ -4,11 +4,12 @@
 
 #**Manual testing**  
   - exploratory testing  
+
 #**Automated testing**  
-  - **Integration test** -> more components  
+  - **Integration test** &rarr; more components  
     - testing, if components work well witch eaach other  
     - cannot find, where is the error  
-  - **Unit test** -> single component  
+  - **Unit test** &rarr; single component  
     - testing, if the component works well  
     - can find the place, which doesn't work well  
   
@@ -24,7 +25,7 @@
   - **unittest**: builtin library  
     - requires using classes and methods   
     - can run using command `python -m unittest test` (file is `test.py`)    
-    - or using command line entry point: `unittest.main()` v kódu   
+    - or using command line entry point: `unittest.main()` in the code   
   - **nose** or **nose2**  
     - compatible with **unittest** tests  
     - running from command line  
@@ -42,9 +43,9 @@
       - huge ecosystem (hundreds of plagins)  
   
 #**some useful info**  
-  - create `__init__.py` in the project directory -> package (it can be imported)  
-  - `__import__()` -> target doesn't have to be package  
-  - tox: for testing in mutliple versions of Python or package   
+  - create `__init__.py` in the project directory &rarr; package (it can be imported)  
+  - `__import__()` &rarr; target doesn't have to be package  
+  - **tox**: for testing in mutliple versions of Python or package   
     - automates testing in mutliple environemnts    
     - for creating config file: `tox-quickstart`  
       - requires setup.py file in my app folder (steps to install packege)  
@@ -53,5 +54,25 @@
       - `tox -r`: recreates the virtual environments (if dependencies have changed)  
       - `tox -q`: les verbose output   
       - `tox -v`: more verbose output   
-
+  - **Linters**: evaluates code quality
+    - **flake8**: comments code style &rarr; configuration from command line of file
+  - keeping testing code clean
+    - **DRY**: (*don't repeat yourself*)
+  - **timeit**: library for evaluating performace of individual functions
+  - **bandit**: for security testing
+  
 #**Automating the execution**   
+  - **Ci/CD** tools (*continous integration/continous deployment*)   
+  - **Git**: executing automatically &rarr; `commit`   
+  - using file `travis.yml`:  
+    ```yaml
+    language: python
+    python:
+      - "2.7"
+      - "3.7"
+    install:
+      - pip install -r requirements.txt
+    script:
+      - python -m unittest discover
+  
+#**Mocking**  
